@@ -1,0 +1,1 @@
+currently, I just hooked up libusb and was able to find the libre. However, opening up the interface did not seem to work, probably because the port was in use by the official libre app.
