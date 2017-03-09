@@ -1,18 +1,21 @@
+GIT
+  remote: https://github.com/gareth/ruby_hid_api.git
+  revision: dff5eb6e649f50e634b7a3acc83dc4828e514fe6
+  branch: master
+  specs:
+    hid_api (0.1.1)
+      ffi (~> 1.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
     ffi (1.9.18)
-    libusb (0.6.2)
-      ffi (~> 1.0)
-      mini_portile2 (~> 2.1)
-    mini_portile2 (2.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  libusb
-  mini_portile2
+  hid_api!
 
 BUNDLED WITH
    1.13.6

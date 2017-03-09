@@ -1,5 +1,3 @@
-# frozen_string_literal: true
 source "https://rubygems.org"
 
-gem "libusb"
-gem 'mini_portile2'
+gem 'hid_api', git: 'https://github.com/gareth/ruby_hid_api.git', branch: 'master'
