@@ -1,6 +1,13 @@
+PATH
+  remote: .
+  specs:
+    freestyle_libre (0.1.0)
+      hidapi (~> 0.1.8)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    diff-lcs (1.2.5)
     ffi (1.9.18)
     hidapi (0.1.8)
       i18n
@@ -8,12 +15,29 @@ GEM
     i18n (0.8.1)
     libusb (0.5.1)
       ffi (>= 1.0)
+    rake (10.5.0)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  hidapi
+  bundler (~> 1.13)
+  freestyle_libre!
+  rake (~> 10.0)
+  rspec (~> 3.0)
 
 BUNDLED WITH
    1.13.6
