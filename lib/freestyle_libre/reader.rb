@@ -12,8 +12,19 @@ module FreestyleLibre
 
       INIT_COMMAND_SEQUENCE.each do |c|
         write Report.new(command: c, payload: [])
-        read
+        puts read
       end
+    end
+
+    def serial
+      write Report.new(command: 0x60, payload: '$sn?'.bytes)
+      read.payload.pack('C*').split("\r").first
+    end
+
+    def date
+      write Report.new(command: 0x60, payload: '$date?'.bytes)
+      month, day, year = *read.payload.pack('C*').split("\r").first.split(',').map(&:to_i)
+      Date.new(year + 2000, month, day)
     end
 
     def close
@@ -29,7 +40,7 @@ module FreestyleLibre
 
     # reads until non-sync data is found
     def read
-      @device.read.tap{|result| puts Report.new(result) }
+      Report.new(@device.read)
     end
   end
 end

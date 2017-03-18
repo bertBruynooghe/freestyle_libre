@@ -16,12 +16,12 @@ module FreestyleLibre
       @data[0]
     end
 
-    def message
+    def payload
       @data[2...2+len]
     end
 
     def to_s
-      "#{message_type.to_s(16)}: #{message.map{|b| b.to_s(16)}.join(', ')}"
+      "#{message_type.to_s(16)}: #{payload.map{|b| b.to_s(16)}.join(', ')}"
     end
 
     private
