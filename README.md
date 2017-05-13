@@ -1,16 +1,13 @@
-The idea of this project is to be able to read relevant data from the Abbott FreeStyle Libre through USB.
+* FreestyleLibre
 
+This is a gem the allows accessing Abbott's FreeStyle Libre data,
+both over USB and from the export file from the official Abbott application.
 
-In first instance, this will stay nothing more than a simple ruby snippet which outputs some of the data.
+It is based both on the splendid work of https://github.com/Flameeyes/glucometer-protocols, and https://github.com/barkerest/hidapi
 
-As for now, I will limit myself to macOS, although it should work as-is on Windows and Linux too.
+Implementation is not fully complete, but it already supports all glucose measurements, both manual and automatic.
 
-Planned spin-offs of this project are:
-
-* a tool that directly uploads meter values to NightScout
-* a 'library' for arduino to get access to the meter values.
-
-Based on the splendid work of https://github.com/Flameeyes/glucometer-protocols
+Documentation is following.
 
 ** Testing
 
