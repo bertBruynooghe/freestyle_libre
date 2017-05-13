@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["bert@bruyooghe-polet.com"]
 
   spec.summary       = %q{Accessing the Abbot FreeStyle Libre reader through USB}
-  spec.homepage      = "https://gitlab.com/BertBruynooghe/freestyle_libre"
+  spec.homepage      = "https://github.com/bertBruynooghe/freestyle_libre"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
